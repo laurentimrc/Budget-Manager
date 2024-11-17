@@ -46,11 +46,12 @@ class BudgetManager:
 if __name__ == "__main__":
     manager = BudgetManager()
 
+    Amount= float(input("Insert Amount\n"))
+    TransactionType= input("Inserisci Type Transaction\n")
+    TransactionDescription= input("Insert Description\n")
+
     # Aggiunta di alcune transazioni
-    manager.add_transaction(1000, "Stipendio mensile", "entrata")
-    manager.add_transaction(200, "Acquisto generi alimentari", "uscita")
-    manager.add_transaction(150, "Abbonamento palestra", "uscita")
-    manager.add_transaction(500, "Bonus produttività", "entrata")
+    manager.add_transaction(Importo, TransactionDescription, TransactionType)
 
     # Visualizzare le transazioni
     print("Transazioni registrate:")
